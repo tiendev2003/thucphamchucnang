@@ -30,4 +30,6 @@ const VariantType = sequelize.define(
   }
 );
 
+
+
 module.exports = VariantType;

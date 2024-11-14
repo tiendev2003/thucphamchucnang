@@ -110,6 +110,12 @@ exports.updateUserInfo = async (req, res, next) => {
       return res.status(404).json(formatResponse('User not found', null));
     }
 
+    if (req.file) {
+      console.log(req.file.path);
+      user.avatar = req.file.path;
+    }
+
+
     // Update user fields
     user.name = name || user.name;
     user.email = email || user.email;

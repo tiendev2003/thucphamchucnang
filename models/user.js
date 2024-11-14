@@ -30,6 +30,10 @@ const User = sequelize.define(
       type: DataTypes.STRING(20),
       allowNull: true,
     },
+    avatar: {
+      type: DataTypes.STRING(250),
+      allowNull: true,
+    },
     registration_token: {
       type: DataTypes.STRING(255),
       allowNull: true,
